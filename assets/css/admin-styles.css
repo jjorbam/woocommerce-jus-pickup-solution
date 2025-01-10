@@ -1,0 +1,136 @@
+/* Estilo general para la configuración administrativa */
+.wrap h1 {
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	color: #23282d;
+}
+
+.pickup-settings-table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 20px;
+}
+
+.pickup-settings-table th {
+	text-align: left;
+	padding: 10px;
+	background: #f4f4f4;
+	border-bottom: 2px solid #ddd;
+	font-weight: bold;
+	color: #23282d;
+}
+
+.pickup-settings-table td {
+	padding: 10px;
+	border-bottom: 1px solid #ddd;
+	color: #444;
+}
+
+/* Botones de acción en el backend */
+.button-primary {
+	background-color: #007cba;
+	border-color: #007cba;
+	color: #fff;
+	text-decoration: none;
+	padding: 8px 15px;
+	border-radius: 3px;
+	transition: background-color 0.3s ease;
+}
+
+.button-primary:hover {
+	background-color: #005a9c;
+	border-color: #005a9c;
+	color: #fff;
+}
+
+/* Formularios del backend */
+.pickup-settings-form {
+	margin-top: 20px;
+	padding: 15px;
+	background: #ffffff;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+}
+
+.pickup-settings-form label {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: bold;
+	color: #23282d;
+}
+
+.pickup-settings-form input,
+.pickup-settings-form select {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 15px;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	font-size: 14px;
+	color: #444;
+}
+
+.pickup-settings-form input:focus,
+.pickup-settings-form select:focus {
+	border-color: #007cba;
+	box-shadow: 0 0 3px rgba(0, 123, 255, 0.5);
+}
+
+/* Mensajes de notificación */
+.notice-success {
+	border-left-color: #46b450;
+}
+
+.notice-error {
+	border-left-color: #dc3232;
+}
+
+/* Iconos */
+.icon-check {
+	color: #46b450;
+	margin-right: 5px;
+}
+
+.icon-error {
+	color: #dc3232;
+	margin-right: 5px;
+}
+
+/* Repetidores */
+.acf-repeater .acf-row {
+	padding: 10px;
+	border: 1px solid #ddd;
+	margin-bottom: 10px;
+	background: #f9f9f9;
+	border-radius: 5px;
+}
+
+.acf-repeater .acf-row:hover {
+	background: #f4f4f4;
+}
+
+.acf-repeater .acf-row-handle {
+	background: #007cba;
+	color: #fff;
+	border-radius: 3px;
+}
+
+.acf-repeater .acf-row-handle:hover {
+	background: #005a9c;
+}
+
+/* Configuración del empleado */
+.employee-list {
+	margin-top: 20px;
+	padding: 15px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	background: #ffffff;
+}
+
+.employee-list h4 {
+	font-weight: bold;
+	margin-bottom: 10px;
+	color: #23282d;
+}

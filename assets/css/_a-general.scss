@@ -1,0 +1,204 @@
+
+.woo-jus-pick-sol{
+	
+	//colores
+	
+	.color-blanco{ color: $blanco; }
+	.color-negro{ color: $negro; }
+	.color-rojo{ color: $rojo; }
+	.color-verde{ color: $verde; }
+	
+	.fondo-blanco{ background-color: $blanco; }
+	.fondo-negro{ background-color: $negro; }
+	.fondo-rojo{ background-color: $rojo; }
+	.fondo-verde{ background-color: $verde; }
+	
+	//Estilos Generales
+	
+	
+	&.manage-orders-page{
+		.shop_table{
+			th{
+				text-align: center;
+			}
+			td{
+				text-align: center;
+			}
+		}
+	}
+	
+	
+	// elementos tipo filtro o formulario
+	
+	input[type="checkbox"], input[type="radio"]{
+		appearance: none;
+		align-items: center;
+		background-color: transparent;
+		border-radius: 1em;
+		border: 1px solid $negro;
+		color: currentColor;
+		display: inline-flex;
+		flex: 0 0 1.35em;
+		height: 1.35em;
+		margin: 0;
+		place-content: center;
+		text-align: center;
+		vertical-align: middle;
+		transform: translateY(-0.075em);
+		width: 1.35em;
+	}
+
+	.select2-container--default .select2-selection .select2-selection__rendered{
+		padding: 0;
+	}
+
+	.select2-container{
+		.select2-search__field{
+			--inputHeight: 1rem;
+		}
+	}
+
+}
+
+
+
+
+.modal .modal-content {
+	text-align: center;
+	padding: 20px;
+}
+.modal .modal-body {
+	font-size: 16px;
+	color: green;
+}
+
+
+
+
+
+
+.pending {
+	color: orange;
+	font-weight: bold;
+}
+
+.completed {
+	color: green;
+	font-weight: bold;
+}
+
+
+.pickup-location-button, .pickup-time-slot-button {
+	display: inline-block;
+	padding: 15px 25px;
+	margin: 10px;
+	border: 2px solid #ccc;
+	background-color: #f9f9f9;
+	cursor: pointer;
+	font-size: 16px;
+	text-align: center;
+	transition: background-color 0.3s ease, border-color 0.3s ease;
+	border-radius: 5px;
+}
+
+.pickup-location-button:hover, .pickup-time-slot-button:hover {
+	background-color: #e8e8e8;
+	border-color: #bbb;
+}
+
+.pickup-location-button.selected, .pickup-time-slot-button.selected {
+	background-color: #4caf50;
+	color: white;
+	border-color: #4caf50;
+}
+
+#pickup_location_field, #pickup_time_slot_field {
+	margin-bottom: 20px;
+}
+
+.woocommerce-invalid {
+	border-color: #e2401c !important; /* Color rojo */
+	background-color: #fef2f2 !important; /* Fondo rojo claro */
+}
+
+.woocommerce-invalid-required-field {
+	box-shadow: 0 0 2px #e2401c;
+}
+
+.pickup-summary {
+	background-color: #f9f9f9;
+	padding: 10px;
+	margin: 10px 0;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+}
+
+.pickup-summary h3 {
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.pickup-summary p {
+	margin: 5px 0;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+
+/* Estilos básicos para botones y campos del checkout */
+.selectable-button {
+	display: inline-block;
+	padding: 10px 20px;
+	margin: 5px;
+	border: 2px solid #ccc;
+	border-radius: 5px;
+	cursor: pointer;
+	text-align: center;
+	transition: all 0.3s ease;
+}
+
+.selectable-button.selected {
+	background-color: #4CAF50;
+	color: white;
+	border-color: #4CAF50;
+}
+
+
+
+/* Ajustar el menú en pantallas pequeñas */
+@media (max-width: 1200px) {
+  nav {
+	font-size: 18px; /* Aumenta el tamaño del texto */
+	padding: 10px; /* Agrega más espacio */
+  }
+
+  nav a {
+	font-size: 20px; /* Aumenta el tamaño de los enlaces */
+	padding: 15px 20px; /* Ajusta el espaciado interno */
+  }
+
+  .menu-icon {
+	font-size: 24px; /* Icono más grande */
+  }
+}
+
+
+/* Ajustar la página de totales en móviles */
+@media (max-width: 1200px) {
+  .totales-container {
+	display: flex;
+	flex-direction: column; /* Las columnas se apilan */
+	padding: 10px;
+  }
+
+  .total-item {
+	font-size: 18px; /* Texto más legible */
+	margin-bottom: 10px; /* Espacio entre elementos */
+  }
+
+  .total-sum {
+	font-size: 22px; /* Resaltar el total */
+	text-align: center; /* Centrar el texto */
+  }
+}
